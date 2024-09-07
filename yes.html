@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+    <div class="max-w-md w-full bg-white p-8 rounded-lg shadow-md">
+        <h1 class="text-2xl font-bold mb-6">Form Input</h1>
+        <form action="#" method="POST" class="space-y-4">
+            <!-- Input Nama -->
+            <div>
+                <label for="name" class="block text-sm font-medium text-gray-700">Nama</label>
+                <input type="text" id="name" name="name" required 
+                       class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50">
+            </div>
+
+            <!-- Input Email -->
+            <div>
+                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                <input type="email" id="email" name="email" required 
+                       class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50">
+            </div>
+
+            <!-- Input Password -->
+            <div>
+                <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                <input type="password" id="password" name="password" required 
+                       class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50">
+            </div>
+
+            <!-- Checkbox -->
+            <fieldset>
+                <legend class="text-sm font-medium text-gray-700">Hobi</legend>
+                <div class="mt-2 space-y-2">
+                    <div class="flex items-center">
+                        <input type="checkbox" id="reading" name="hobbies" value="membaca"
+                               class="h-4 w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">
+                        <label for="reading" class="ml-2 text-sm text-gray-600">Membaca</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="writing" name="hobbies" value="menulis"
+                               class="h-4 w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">
+                        <label for="writing" class="ml-2 text-sm text-gray-600">Menulis</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="sports" name="hobbies" value="olahraga"
+                               class="h-4 w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">
+                        <label for="sports" class="ml-2 text-sm text-gray-600">Olahraga</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Radio Button -->
+            <fieldset>
+                <legend class="text-sm font-medium text-gray-700">Jenis Kelamin</legend>
+                <div class="mt-2 space-y-2">
+                    <div class="flex items-center">
+                        <input type="radio" id="female" name="gender" value="wanita"
+                               class="h-4 w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">
+                        <label for="female" class="ml-2 text-sm text-gray-600">Wanita</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="radio" id="male" name="gender" value="pria"
+                               class="h-4 w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">
+                        <label for="male" class="ml-2 text-sm text-gray-600">Pria</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Input Number -->
+            <div>
+                <label for="age" class="block text-sm font-medium text-gray-700">Umur</label>
+                <input type="number" id="age" name="age" required 
+                       class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50">
+            </div>
+
+            <!-- Input Date -->
+            <div>
+                <label for="date" class="block text-sm font-medium text-gray-700">Tanggal</label>
+                <input type="date" id="date" name="date" required 
+                       class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50">
+            </div>
+
+            <!-- Input File -->
+            <div>
+                <label for="file" class="block text-sm font-medium text-gray-700">Upload File</label>
+                <input type="file" id="file" name="file" 
+                       class="mt-1 block w-full text-sm text-gray-600 file:py-2 file:px-4 file:border file:border-gray-300 file:rounded-md file:bg-indigo-50 file:text-indigo-700 hover:file:bg-indigo-100">
+            </div>
+
+            <!-- Submit Button -->
+            <div>
+                <button type="submit" 
+                        class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50">
+                    Kirim
+                </button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
